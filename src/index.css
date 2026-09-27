@@ -69,3 +69,160 @@ border-radius:50%;
 object-fit:cover;
 
 }
+
+
+.gallery-page{
+
+min-height:100vh;
+
+padding:32px clamp(24px, 7vw, 100px) 72px;
+
+color:#f7f3ee;
+
+background:linear-gradient(135deg, #161616, #3c2928 55%, #8d5d43);
+
+}
+
+
+.back-home{
+
+display:inline-block;
+
+color:#f7f3ee;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+.gallery-intro{
+
+max-width:620px;
+
+margin:90px auto 50px;
+
+text-align:center;
+
+}
+
+
+.gallery-intro h1{
+
+margin:8px 0;
+
+font-size:clamp(3rem, 8vw, 6rem);
+
+letter-spacing:.08em;
+
+}
+
+
+.gallery-kicker{
+
+margin:0;
+
+color:#f4bc8d;
+
+font-size:.8rem;
+
+font-weight:bold;
+
+letter-spacing:.2em;
+
+text-transform:uppercase;
+
+}
+
+
+.photo-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+
+gap:24px;
+
+max-width:1100px;
+
+margin:auto;
+
+}
+
+
+.photo-card{
+
+margin:0;
+
+padding:12px 12px 18px;
+
+background:#f7f3ee;
+
+box-shadow:0 20px 40px rgba(0, 0, 0, .28);
+
+color:#222;
+
+transform:rotate(-1.5deg);
+
+}
+
+
+.photo-card:nth-child(even){
+
+transform:rotate(1.5deg);
+
+}
+
+
+.photo-card img{
+
+display:block;
+
+width:100%;
+
+aspect-ratio:4 / 5;
+
+object-fit:cover;
+
+}
+
+
+.photo-card figcaption{
+
+padding:14px 4px 0;
+
+font-family:cursive;
+
+font-size:1.15rem;
+
+}
+
+
+.gallery {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.gallery h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform .3s ease;
+    cursor: pointer;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
