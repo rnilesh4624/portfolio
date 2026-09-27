@@ -5,7 +5,7 @@ return(
 <section className="hero">
 
 <img 
-src="/images/profile.jpg"
+src={`${import.meta.env.BASE_URL}images/profile.jpeg`}
 alt="Nilesh Rathod"
 className="profile"
 />
